@@ -1,0 +1,57 @@
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px; 
+    width: 100px;
+}
+ul li a{
+    font-size:16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkgreen;
+}
+.main{
+    background: url(image1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.bar{
+    width: 86%;
+    display:flex; 
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;  
+}
+ul li a:hover{
+    color: red;
+}
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+.image img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform:translate(-50px);
+    bottom:0;
+    transition: bottom 1s, left 1s;
+
+}
+.image:hover .shape{
+    bottom: 45%;
+   
+}
+.image:hover .kai{
+    left: 45%;
+}
+
+span{
+    color: orange;
+}
